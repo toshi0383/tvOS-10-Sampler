@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  TVOSTest
+
+  Created by toshi0383 on 2016/09/24.
+  Copyright © 2016 Toshihiro Suzuki. All rights reserved.
+*/
+
+"notification_message"="%d秒後に通知されます。アプリをBackgroundにしてアイコンのBadgeを確認してください。";

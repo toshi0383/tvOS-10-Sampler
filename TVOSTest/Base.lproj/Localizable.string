@@ -1,0 +1,8 @@
+/* 
+  Localizable.string.strings
+  TVOSTest
+
+  Created by toshi0383 on 2016/09/24.
+  Copyright © 2016 Toshihiro Suzuki. All rights reserved.
+*/
+"notification_message"="You will be notified in %d seconds. Close your app and wait in home screen to see the badge update.";

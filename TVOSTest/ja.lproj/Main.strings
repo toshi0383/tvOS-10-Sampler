@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Content Proposal: AVKitそのままの場合"; ObjectID = "6Lc-fY-pAh"; */
+"6Lc-fY-pAh.text" = "Content Proposal: AVKitそのままの場合(tvOS10betaの途中から動かなくなりました.)";
+
+/* Class = "UILabel"; text = "Content Proposal: カスタムUI"; ObjectID = "Bwh-CO-dxc"; */
+"Bwh-CO-dxc.text" = "Content Proposal: カスタムUI";
+
+/* Class = "UILabel"; text = "UserNotification"; ObjectID = "FvP-tz-em5"; */
+"FvP-tz-em5.text" = "UserNotification";
+
+/* Class = "UIButton"; normalTitle = "Send Notification"; ObjectID = "Vq2-sY-9nu"; */
+"Vq2-sY-9nu.normalTitle" = "Send Notification";
+
+/* Class = "UINavigationItem"; title = "tvOS10 New API Demo"; ObjectID = "ZzG-n5-Por"; */
+"ZzG-n5-Por.title" = "tvOS10 New API Demo";
+
+/* Class = "UIButton"; normalTitle = "Update App Icon Badge Number"; ObjectID = "l6x-Bz-hKb"; */
+"l6x-Bz-hKb.normalTitle" = "Update App Icon Badge Number";

@@ -1,0 +1,6 @@
+
+/* Class = "UIButton"; normalTitle = "次へ"; ObjectID = "PA7-CY-IUS"; */
+"PA7-CY-IUS.normalTitle" = "次へ";
+
+/* Class = "UITextView"; text = "preferredPlayerContentRect で動画サイズを指定するだけで、勝手にプレイヤーの縮小アニメーションをしてくれています。それ以外のUIはこのように自由に作りこむことができます。"; ObjectID = "Xq4-Sq-1BZ"; */
+"Xq4-Sq-1BZ.text" = "preferredPlayerContentRect で動画サイズを指定するだけで、勝手にプレイヤーの縮小アニメーションをしてくれています。それ以外のUIはこのように自由に作りこむことができます。";

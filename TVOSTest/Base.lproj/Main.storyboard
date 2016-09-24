@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KMz-zK-DIF">
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AV Player View Controller-->
+        <scene sceneID="Yt0-oq-jKe">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="4FK-5Z-0Ja" customClass="ViewController" customModule="TVOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="customedUI" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZa-8K-t3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3018" y="-103"/>
+        </scene>
+        <!--tvOS10 New API Demo-->
+        <scene sceneID="1JT-eq-N7i">
+            <objects>
+                <tableViewController id="FE2-j6-hb6" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="cbP-Vj-HpC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <sections>
+                            <tableViewSection id="QrH-hh-XmC">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" textLabel="Bwh-CO-dxc" style="IBUITableViewCellStyleDefault" id="c4O-fq-IPU">
+                                        <rect key="frame" x="0.0" y="145" width="1920" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="c4O-fq-IPU" id="6kC-pR-zzt">
+                                            <frame key="frameInset" width="1904" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Content Proposal: Custom UI" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bwh-CO-dxc">
+                                                    <frame key="frameInset" minX="20" width="1864" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="4FK-5Z-0Ja" kind="show" id="wTU-7w-Ml2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" textLabel="6Lc-fY-pAh" style="IBUITableViewCellStyleDefault" id="PRE-Lb-K2O">
+                                        <rect key="frame" x="0.0" y="225" width="1920" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PRE-Lb-K2O" id="g17-oH-krl">
+                                            <frame key="frameInset" width="1904" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Content Proposal: AVKit Default (not working anymore)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6Lc-fY-pAh">
+                                                    <frame key="frameInset" minX="20" width="1864" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="SWU-WA-tZz" kind="show" id="la1-sx-A2m"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="FvP-tz-em5" style="IBUITableViewCellStyleDefault" id="GMU-zY-pqQ">
+                                        <rect key="frame" x="0.0" y="305" width="1920" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GMU-zY-pqQ" id="E9e-io-Ymx">
+                                            <frame key="frameInset" width="1904" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="UserNotification" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FvP-tz-em5">
+                                                    <frame key="frameInset" minX="20" width="1864" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="7Pc-Fa-Hro" kind="show" id="U2r-xW-YgK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="FE2-j6-hb6" id="INJ-cb-wDy"/>
+                            <outlet property="delegate" destination="FE2-j6-hb6" id="XR7-gm-i3C"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="tvOS10 New API Demo" id="ZzG-n5-Por"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rPJ-je-0g2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="1008"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D7b-TL-wCv">
+            <objects>
+                <navigationController id="KMz-zK-DIF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cQk-Ql-3zS">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="FE2-j6-hb6" kind="relationship" relationship="rootViewController" id="8NJ-Re-wFR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5B-sb-rw5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1138" y="1008"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="fvJ-42-ER0">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="SWU-WA-tZz" customClass="ViewController" customModule="TVOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="customedUI" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </avPlayerViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wn9-u8-Hy6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3114" y="1105"/>
+        </scene>
+        <!--User Notification Demo View Controller-->
+        <scene sceneID="FnW-mV-Cga">
+            <objects>
+                <viewController id="7Pc-Fa-Hro" customClass="UserNotificationDemoViewController" customModule="TVOSTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AKt-U5-rrW"/>
+                        <viewControllerLayoutGuide type="bottom" id="5yc-tQ-48k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XHC-a2-r6m">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vq2-sY-9nu">
+                                <frame key="frameInset" minX="773" minY="415" width="375" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Send Notification"/>
+                                <connections>
+                                    <action selector="sendNotificationWithSender:" destination="7Pc-Fa-Hro" eventType="primaryActionTriggered" id="0wA-RD-tvH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6x-Bz-hKb">
+                                <frame key="frameInset" minX="643" minY="576" width="634" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Update App Icon Badge Number"/>
+                                <connections>
+                                    <action selector="updateBadgeWithSender:" destination="7Pc-Fa-Hro" eventType="primaryActionTriggered" id="ofD-Tn-b6x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HSm-o4-P53" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2870" y="2339"/>
+        </scene>
+    </scenes>
+</document>
