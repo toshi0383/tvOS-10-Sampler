@@ -31,7 +31,7 @@ class ViewController: AVPlayerViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         player?.replaceCurrentItem(with: nil)
-        contentProposalViewController.dismissContentProposal(for: .reject, animated: false, completion: nil)
+        (contentProposalViewController as? ContentProposalViewController)?.shouldDismiss = true
     }
 
     func setProposal() {
@@ -66,14 +66,46 @@ extension ViewController {
 }
 
 class ContentProposalViewController: AVContentProposalViewController {
-    @IBOutlet var button: UIButton!
+    var shouldDismiss: Bool = false {
+        didSet { dismissIfNeeded() }
+    }
+    @IBOutlet private var button: UIButton! {
+        didSet { button.alpha = 0.0 }
+    }
+    @IBOutlet private var textView: UITextView! {
+        didSet { textView.alpha = 0.0 }
+    }
     override var preferredFocusEnvironments: [UIFocusEnvironment] {
         return [button]
     }
     override var preferredPlayerViewFrame: CGRect {
         return CGRect(x: 432, y: 20, width: 1056, height: 594)
     }
-    @IBAction func button(sender: UIButton!) {
+    @IBAction private func button(sender: UIButton!) {
         dismissContentProposal(for: .accept, animated: true, completion: nil)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print(#function)
+        if !shouldDismiss {
+            UIView.animate(withDuration: 0.2) {
+                self.button.alpha = 1.0
+                self.textView.alpha = 1.0
+            }
+        } else {
+            dismissIfNeeded()
+        }
+    }
+    private func dismissIfNeeded() {
+        if shouldDismiss {
+            DispatchQueue.main.async { [weak self] in
+                self?.button?.alpha = 0.0
+                self?.textView?.alpha = 0.0
+                self?.dismissContentProposal(for: .reject, animated: false, completion: nil)
+            }
+        }
+    }
+    deinit {
+        print(#function)
     }
 }
